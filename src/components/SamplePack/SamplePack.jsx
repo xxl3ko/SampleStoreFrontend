@@ -12,9 +12,9 @@ const SamplePack = () => {
         })
     }, [])
 
-    return (<div>
+    return <div className={SamplePack}>
         {ura.map(sample_pack => <img src={sample_pack.cover_src}></img>)}
-    </div>)
+    </div>
 }
 
 export default SamplePack

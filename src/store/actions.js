@@ -1,0 +1,1 @@
+export const POST_PLAYER = 'POST_PLAYER'
