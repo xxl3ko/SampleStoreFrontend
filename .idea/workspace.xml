@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e064ba8-73b0-444b-bec8-8009825473ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Sample/Sample.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sample/Sample.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Player/Player.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/playerReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sample_pack-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Player/Player.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +64,10 @@
       <workItem from="1676048669548" duration="254000" />
       <workItem from="1676048926183" duration="414000" />
       <workItem from="1676049348765" duration="5486000" />
-      <workItem from="1676092385490" duration="701000" />
+      <workItem from="1676092385490" duration="1018000" />
+      <workItem from="1676139432334" duration="950000" />
+      <workItem from="1676224481419" duration="5470000" />
+      <workItem from="1676266816502" duration="3114000" />
     </task>
     <servers />
   </component>

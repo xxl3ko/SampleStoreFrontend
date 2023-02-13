@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./components/Header/Header";
-import Sample from "./components/Sample/Sample";
 import SamplePack from "./components/SamplePack/SamplePack";
+import Player from "./components/Player/Player";
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
         <div className="App">
             <Header/>
             <SamplePack/>
-            <Sample/>
+            <Player/>
         </div>
     )
 }
