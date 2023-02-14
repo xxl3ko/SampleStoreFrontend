@@ -17,24 +17,24 @@ const Sample = () => {
     )
 
     const dispatch = useDispatch()
-    const post_player = (oleg) => dispatch({
+    const post_player = (src) => dispatch({
         type: "SET_PLAYER_SRC", payload: {
-            src: oleg
+            src: src
         }
     })
 
-return (
-    <div className={css.sample_board}>
-        {ura.map(sample => {
-            return (
-                <div className={css.sample} onClick={() => post_player(sample.file_src)}>
-                    {sample.title}
-                </div>
-            )
-        })
-        }
-    </div>
-)
+    return (
+        <div className={css.sample_board}>
+            {ura.map(sample => {
+                return (
+                    <div className={css.sample} onClick={() => post_player(sample.file_src)}>
+                        {sample.title}
+                    </div>
+                )
+            })
+            }
+        </div>
+    )
 }
 
 export default Sample

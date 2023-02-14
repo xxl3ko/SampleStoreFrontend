@@ -1,8 +1,9 @@
 import './App.css';
 import Header from "./components/Header/Header";
-import SamplePack from "./components/SamplePack/SamplePack";
+import {SamplePack} from "./components/SamplePack/SamplePack";
 import Sample from "./components/Sample/Sample";
 import Player from "./components/Player/Player";
+import {SamplePackBoard} from "./components/SamplePackBoard/SamplePackBoard";
 
 
 
@@ -10,8 +11,9 @@ function App() {
     return (
         <div className="App">
             <Header/>
+            <SamplePackBoard/>
             <SamplePack/>
-            <Sample />
+            <Sample/>
             <Player/>
         </div>
     )
