@@ -1,4 +1,4 @@
-import {POST_PLAYER} from "./actions";
+import {POST_PLAYER} from "../Actions/actions";
 
 const initialState = {
     src: ''

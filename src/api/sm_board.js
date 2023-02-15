@@ -1,10 +1,10 @@
 import {makeRequest} from "./api";
 
-const URL = '/samplepack'
+const URL = 'samplepack'
 
-export const getPack = () => makeRequest({
-    method: "GET,",
-    url: URL
+export const packRequest = (config) => makeRequest({
+    method: "GET",
+    url: URL,
 })
 
-console.log(getPack())
+//console.log(getPack())

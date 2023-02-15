@@ -1,13 +1,14 @@
 import React from 'react'
 import css from './SamplePackBoard.module.css'
 import {useDispatch} from "react-redux";
-import {getPack} from "../../store/actions";
+import {getPacks} from "../../store/Actions/actions";
+import {packRequest} from "../../api/sm_board";
 
 export const SamplePackBoard = () => {
     const dispatch = useDispatch()
 
     const oleg = () => {
-        return dispatch(getPack)
+        dispatch(getPacks())
     }
 
     return <div className={css.SamplePackBoard}>

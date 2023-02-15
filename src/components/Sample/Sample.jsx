@@ -9,7 +9,7 @@ const Sample = () => {
 
     useEffect(() => {
             axios
-                .get('http://127.0.0.1:8000/api/sample')
+                .get('http://127.0.0.1:8000/api/sample/')
                 .then(data => {
                     setUra(data.data);
                 })
