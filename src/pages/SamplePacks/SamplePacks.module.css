@@ -1,0 +1,11 @@
+.SamplePacks {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    background-color: azure;
+}
+
+.SamplePacks img {
+    width: auto;
+    height: 150px;
+}

@@ -1,10 +1,12 @@
 import {combineReducers} from "redux";
 import {playerReducer} from "./playerReducer";
-import {sampleReducer} from "./sampleReducer";
-import {sp_boardReducer} from "./sp_boardReducer";
+import {samplepackReducer} from "./samplepackReducer";
+import {samplepacksReducer} from "./samplepacksReducer";
 
 export const rootReducer = combineReducers({
+    sample_packs: samplepacksReducer,
+    sample_pack: samplepackReducer,
     player: playerReducer,
-    sample: sampleReducer,
-    sp_board: sp_boardReducer,
+
+
 })

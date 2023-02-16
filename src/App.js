@@ -1,20 +1,26 @@
 import './App.css';
-import Header from "./components/Header/Header";
-import {SamplePack} from "./components/SamplePack/SamplePack";
-import Sample from "./components/Sample/Sample";
-import Player from "./components/Player/Player";
-import {SamplePackBoard} from "./components/SamplePackBoard/SamplePackBoard";
-
+import {Route, Switch} from "react-router-dom";
+import {Welcome} from "./pages/Welcome/Welcome";
+import {SamplePacks} from "./pages/SamplePacks/SamplePacks";
+import {SamplePack} from "./pages/SamplePack/SamplePack";
+import {Header} from "./components/Header/Header";
 
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <SamplePackBoard/>
-            <SamplePack/>
-            <Sample/>
-            <Player/>
+            <Switch>
+                <Route path='/welcome'>
+                    <Welcome/>
+                </Route>
+                <Route path='/Packs' exact>
+                    <SamplePacks/>
+                </Route>
+                <Route path='/Packs/:packId'>
+                    <SamplePack/>
+                </Route>
+            </Switch>
         </div>
     )
 }

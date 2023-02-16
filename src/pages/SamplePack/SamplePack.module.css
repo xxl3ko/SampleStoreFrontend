@@ -1,0 +1,9 @@
+.SamplePack {
+    height: 150px;
+    background-color: beige;
+}
+
+.SamplePack img {
+    width: auto;
+    height: 150px;
+}
