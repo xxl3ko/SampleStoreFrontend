@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from "react";
-import css from "./Sample.module.css"
+/*import React, {useEffect, useState} from "react";
+import css from "./Samples.module.css"
 import axios from "axios";
 import {useDispatch} from "react-redux";
 
 
-const Sample = () => {
+const Temp = () => {
     const [ura, setUra] = useState([])
 
     useEffect(() => {
@@ -17,11 +17,13 @@ const Sample = () => {
     )
 
     const dispatch = useDispatch()
-    const post_player = (src) => dispatch({
-        type: "SET_PLAYER_SRC", payload: {
-            src: src
-        }
-    })
+    const post_player = (src) => dispatch(
+        {
+            type: "SET_PLAYER_SRC",
+            payload: {
+                src: src
+            }
+        })
 
     return (
         <div className={css.sample_board}>
@@ -37,4 +39,4 @@ const Sample = () => {
     )
 }
 
-export default Sample
+export default Temp*/

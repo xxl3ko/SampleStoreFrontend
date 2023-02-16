@@ -1,4 +1,4 @@
-import {GET_PACK, SET_PACK} from "../Actions/actions";
+import {GET_PACK} from "../Actions/actions";
 
 const initialState = {
     sample_pack: {},

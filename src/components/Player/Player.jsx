@@ -2,7 +2,7 @@ import React from "react";
 import css from './Player.module.css'
 import {useSelector} from "react-redux";
 
-const Player = () => {
+export const Player = () => {
 
     const plsrc = useSelector(state => state.player.src)
 
@@ -10,5 +10,3 @@ const Player = () => {
             <audio id="audio" src={plsrc.src} controls></audio>
         </div>)
 }
-
-export default Player
