@@ -1,9 +1,10 @@
 import './App.css';
 import {Route, Switch} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Welcome} from "./pages/Welcome/Welcome";
 import {SamplePacks} from "./pages/SamplePacks/SamplePacks";
 import {SamplePack} from "./pages/SamplePack/SamplePack";
-import {Header} from "./components/Header/Header";
+import Header from "./components/Header/Header";
 
 
 function App() {
