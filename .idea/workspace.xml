@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e064ba8-73b0-444b-bec8-8009825473ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/TEMP/temp.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/Reducers/samplesReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/samples.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/samples.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Player/Player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Player/Player.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sample/Sample.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sample/Sample.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SamplePack/SamplePack.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SamplePack/SamplePack.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Reducers/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Reducers/samplepackReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Reducers/samplepackReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,21 +27,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/iliasharin/Programming/Webstorm Projects/RuSampleFront/src/store/Reducers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/iliasharin/Programming/Webstorm Projects/RuSampleFront/src/store/Reducers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/store/Reducers" />
@@ -84,11 +75,24 @@
       <workItem from="1676301439383" duration="4997000" />
       <workItem from="1676390476897" duration="13585000" />
       <workItem from="1676488421979" duration="13000" />
-      <workItem from="1676564795194" duration="8495000" />
+      <workItem from="1676564795194" duration="9008000" />
+      <workItem from="1676619199996" duration="40000" />
+      <workItem from="1676656866809" duration="3283000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
