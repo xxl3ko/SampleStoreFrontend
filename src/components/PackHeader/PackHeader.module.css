@@ -1,0 +1,25 @@
+.header {
+    padding: 16px;
+    display: flex;
+}
+
+.cover {
+    height: 285px;
+    width: 285px;
+    border-radius: 8px;
+}
+
+.content {
+    padding: 5px 0 0 30px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: left;
+    font-size: 2.25rem;
+    font-weight: 700;
+
+}

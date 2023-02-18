@@ -2,26 +2,27 @@ import './App.css';
 import {Route, Switch} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Welcome} from "./pages/Welcome/Welcome";
-import {SamplePacks} from "./pages/SamplePacks/SamplePacks";
-import {SamplePack} from "./pages/SamplePack/SamplePack";
-import Header from "./components/Header/Header";
+import {Packs} from "./pages/Packs/Packs";
+import {Pack} from "./pages/Pack/Pack";
+import {Layout} from "./layouts/Layout";
 
 
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Switch>
-                <Route path='/welcome'>
-                    <Welcome/>
-                </Route>
-                <Route path='/Packs' exact>
-                    <SamplePacks/>
-                </Route>
-                <Route path='/Packs/:packId'>
-                    <SamplePack/>
-                </Route>
-            </Switch>
+            <Layout>
+                <Switch>
+                    <Route path='/welcome'>
+                        <Welcome/>
+                    </Route>
+                    <Route path='/Packs' exact>
+                        <Packs/>
+                    </Route>
+                    <Route path='/Packs/:packId'>
+                        <Pack/>
+                    </Route>
+                </Switch>
+            </Layout>
         </div>
     )
 }

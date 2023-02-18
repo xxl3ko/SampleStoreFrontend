@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react'
-import css from './SamplePacks.module.css'
+import css from './Packs.module.css'
 
 import {useDispatch, useSelector} from "react-redux";
 import {getPacks} from "../../store/Actions/actions";
 import {NavLink} from "react-router-dom";
 
-export const SamplePacks = () => {
+export const Packs = () => {
     const dispatch = useDispatch()
     const state = useSelector(state => state.sample_packs)
 

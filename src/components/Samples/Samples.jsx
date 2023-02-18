@@ -13,13 +13,6 @@ export const Samples = (packID) => {
         dispatch(getSamples(packID))
     }, [])
 
-    /*const post_player = (src) => dispatch(
-        {
-            type: SET_PLAYER_SRC,
-            payload: {
-                src: src
-            }
-        })*/
     const playerSrc = (src) => {
         return dispatch(setPlayerSrc(src))
     }
