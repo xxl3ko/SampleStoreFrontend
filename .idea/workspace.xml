@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2e064ba8-73b0-444b-bec8-8009825473ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Samples/Samples.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +81,8 @@
       <workItem from="1676564795194" duration="9008000" />
       <workItem from="1676619199996" duration="40000" />
       <workItem from="1676656866809" duration="3283000" />
+      <workItem from="1676706552423" duration="62000" />
+      <workItem from="1676739832264" duration="4072000" />
     </task>
     <servers />
   </component>
