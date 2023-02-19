@@ -3,7 +3,8 @@ import css from './Packs.module.css'
 
 import {useDispatch, useSelector} from "react-redux";
 import {getPacks} from "../../store/Actions/actions";
-import {NavLink} from "react-router-dom";
+import {PackCard} from "../../components/PackCard/PackCard";
+
 
 export const Packs = () => {
     const dispatch = useDispatch()
@@ -14,12 +15,10 @@ export const Packs = () => {
     }, [])
 
     return (
-        <div className={css.SamplePacks}>
+        <div className={css.container}>
             {state.sample_packs.map(pack => {
                 return (
-                    <NavLink to={`/packs/${pack.id}`}>
-                        <img src={pack.cover_src} alt=""></img>
-                    </NavLink>
+                    <PackCard pack={pack}/>
                 )
             })
             }

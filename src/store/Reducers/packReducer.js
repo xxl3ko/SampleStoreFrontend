@@ -1,14 +1,14 @@
 import {GET_PACK} from "../Actions/actions";
 
 const initialState = {
-    sample_pack: {},
+    pack: {},
 }
 
-export const samplepackReducer = (state = initialState, action) => {
+export const packReducer = (state = initialState, action) => {
     switch (action.type) {
         case GET_PACK:
             return {
-                sample_pack: action.payload,
+                pack: action.payload,
             };
         default:
             return state

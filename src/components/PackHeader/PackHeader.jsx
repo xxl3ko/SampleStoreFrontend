@@ -7,7 +7,7 @@ import {getPack} from "../../store/Actions/actions";
 export const PackHeader = () => {
 
     const dispatch = useDispatch()
-    const state = useSelector(state => state.sample_pack)
+    const state = useSelector(state => state.pack)
     const params = useParams()
 
     useEffect(() => {
@@ -16,10 +16,10 @@ export const PackHeader = () => {
 
     return (
         <div className={css.header}>
-            <img className={css.cover} src={state.sample_pack.cover_src} alt=""/>
+            <img className={css.cover} src={state.pack.cover_src} alt=""/>
             <div className={css.content}>
                 <div className={css.title}>
-                    <h1>{state.sample_pack.title}</h1>
+                    <h1>{state.pack.title}</h1>
                 </div>
             </div>
         </div>

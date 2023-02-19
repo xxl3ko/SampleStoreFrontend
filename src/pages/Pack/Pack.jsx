@@ -13,7 +13,6 @@ export const Pack = () => {
         <div className={css.container}>
             <PackHeader packId={params.packId}/>
             <Samples packId={params.packId}/>
-            <Player/>
         </div>
     )
 }

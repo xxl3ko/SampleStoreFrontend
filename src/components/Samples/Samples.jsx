@@ -8,7 +8,8 @@ import {PlusCircleOutlined} from "@ant-design/icons";
 
 export const Samples = (packID) => {
     const dispatch = useDispatch()
-    const state = useSelector(state => state.samples)
+    const statePack = useSelector(state => state.pack.pack)
+    const stateSample = useSelector(state => state.samples)
 
     useEffect(() => {
         dispatch(getSamples(packID))
@@ -20,11 +21,13 @@ export const Samples = (packID) => {
 
     return (
         <div className={css.sample_list}>
-            {state.samples.map(sample => {
+            {stateSample.samples.map(sample => {
                 return (
                     <div className={css.sample} onClick={() => playerSrc(sample.file_src)}>
                         <div className={css.add_shoping_cart}><PlusCircleOutlined /></div>
-                        <div><img src='' alt=""/></div>
+                        <div className={css.cover}>
+                            <img src={statePack.cover_src} alt=""/>
+                        </div>
                         <div>{sample.title}</div>
 
                     </div>

@@ -12,6 +12,7 @@ export const Header = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="/welcome">Welcome</Nav.Link>
                         <Nav.Link href="/packs">Packs</Nav.Link>
+                        <Nav.Link href="/plugins">Plugins</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
