@@ -5,6 +5,7 @@ export const GET_PACKS = 'GET_PACKS'
 export const GET_PACK = 'GET_PACK'
 export const GET_SAMPLES = 'GET_SAMPLES'
 
+
 export const getPacks = () => {
     return async dispatch => {
         const response = await packsRequest()

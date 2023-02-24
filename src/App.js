@@ -5,6 +5,7 @@ import {Welcome} from "./pages/Welcome/Welcome";
 import {Packs} from "./pages/Packs/Packs";
 import {Pack} from "./pages/Pack/Pack";
 import {Layout} from "./layouts/Layout";
+import {Auth} from "./pages/Auth/Auth";
 
 
 function App() {
@@ -15,11 +16,14 @@ function App() {
                     <Route path='/welcome'>
                         <Welcome/>
                     </Route>
-                    <Route path='/Packs' exact>
+                    <Route path='/packs' exact>
                         <Packs/>
                     </Route>
-                    <Route path='/Packs/:packId'>
+                    <Route path='/packs/:packId'>
                         <Pack/>
+                    </Route>
+                    <Route path='/auth'>
+                        <Auth/>
                     </Route>
                 </Switch>
             </Layout>
