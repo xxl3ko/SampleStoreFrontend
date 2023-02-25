@@ -3,6 +3,7 @@ import {playerReducer} from "./playerReducer";
 import {samplepacksReducer} from "./samplepacksReducer";
 import {packReducer} from "./packReducer";
 import {samplesReducer} from "./samplesReducer";
+import {createUserFormReducer} from "./createUserFormReducer";
 
 
 export const rootReducer = combineReducers({
@@ -10,4 +11,5 @@ export const rootReducer = combineReducers({
     pack: packReducer,
     samples: samplesReducer,
     player: playerReducer,
+    create_user: createUserFormReducer,
 })

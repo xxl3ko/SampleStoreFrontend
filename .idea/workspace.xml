@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e064ba8-73b0-444b-bec8-8009825473ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/CreateUser/CreateUserForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CreateUser/CreateUserForm.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/Reducers/createUserFormReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Auth/Auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth/Auth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/Reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Reducers/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +86,9 @@
       <workItem from="1676739832264" duration="4072000" />
       <workItem from="1676787983870" duration="45000" />
       <workItem from="1677053970288" duration="660000" />
+      <workItem from="1677064929367" duration="60000" />
+      <workItem from="1677260611455" duration="3832000" />
+      <workItem from="1677301027255" duration="1343000" />
     </task>
     <servers />
   </component>
