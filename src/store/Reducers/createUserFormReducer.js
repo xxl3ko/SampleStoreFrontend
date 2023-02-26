@@ -1,4 +1,4 @@
-import {CREATE_USER_SUCCESS, ONCHANGE_REGISTER_DATA, ONCHANGE_REGISTER_USERNAME} from "../Actions/authActions";
+import {CREATE_USER_SUCCESS, ONCHANGE_REGISTER_DATA} from "../Actions/authActions";
 
 const initialState = {
     username: '',
