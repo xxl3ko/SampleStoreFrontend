@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import {UserNavBar} from "../UserNavBar/UserNavBar";
 
 export const Header = () => {
     return (
@@ -13,10 +14,9 @@ export const Header = () => {
                         <Nav.Link href="/welcome">Welcome</Nav.Link>
                         <Nav.Link href="/packs">Packs</Nav.Link>
                         <Nav.Link href="/plugins">Plugins</Nav.Link>
-                        <Nav.Link href="/login">SignIn</Nav.Link>
-                        <Nav.Link href="/auth">SignUp</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
+                <UserNavBar/>
             </Container>
         </Navbar>
     );

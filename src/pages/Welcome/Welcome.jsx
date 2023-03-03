@@ -1,11 +1,11 @@
 import React from 'react'
-import {NavUserLogged} from "../../components/NavUserLogged/NavUserLogged";
+import {UserNavBar} from "../../components/UserNavBar/UserNavBar";
 
 export const Welcome = () => {
     return (
         <div>
             <div>WELCOME</div>
-            <NavUserLogged/>
+            <UserNavBar/>
         </div>
     )
 }

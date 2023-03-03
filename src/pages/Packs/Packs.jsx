@@ -8,7 +8,7 @@ import {PackCard} from "../../components/PackCard/PackCard";
 
 export const Packs = () => {
     const dispatch = useDispatch()
-    const state = useSelector(state => state.sample_packs)
+    const state = useSelector(state => state.packs)
 
     useEffect(() => {
         dispatch(getPacks())
@@ -16,7 +16,7 @@ export const Packs = () => {
 
     return (
         <div className={css.container}>
-            {state.sample_packs.map(pack => {
+            {state.packs.map(pack => {
                 return (
                     <PackCard pack={pack}/>
                 )

@@ -1,11 +1,35 @@
 import {makeRequest} from "./api";
 
-const URL = '/auth/users/me/'
+const URL = '/auth'
+
+export const createUserRequest = (config) => makeRequest({
+    method: "POST",
+    url: `${URL}`,
+    data: {
+        ...config
+    },
+})
+
+export const loginRequest = (config) => makeRequest({
+    method: "POST",
+    url: `${URL}/token/login/`,
+    data: {
+        ...config
+    },
+})
+
+export const logoutRequest = () => makeRequest({
+    method: "POST",
+    url: `${URL}/token/logout/`,
+    headers: {
+        Authorization: `Token ${localStorage.getItem('token')}`
+    }
+})
 
 export const userRequest = () => makeRequest({
     method: "GET",
-    url: `${URL}`,
+    url: `${URL}/users/me/`,
     headers: {
-        Authorization: 'Token 344992bf1a1f0e08df21787fecb392d01173308f'
+        Authorization: `Token ${localStorage.getItem('token')}`
     }
 })

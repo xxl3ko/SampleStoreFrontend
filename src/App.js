@@ -7,7 +7,6 @@ import {Packs} from "./pages/Packs/Packs";
 import {Pack} from "./pages/Pack/Pack";
 import {Layout} from "./layouts/Layout";
 import {Auth} from "./pages/Auth/Auth";
-import {Login} from "./pages/Login/Login";
 
 
 function App() {
@@ -23,9 +22,6 @@ function App() {
                     </Route>
                     <Route path='/packs/:packId'>
                         <Pack/>
-                    </Route>
-                    <Route path='/login'>
-                        <Login/>
                     </Route>
                     <Route path='/auth'>
                         <Auth/>

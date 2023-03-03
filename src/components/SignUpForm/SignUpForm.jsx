@@ -1,9 +1,9 @@
 import React from 'react'
-import css from './CreateUserForm.module.css'
+import css from './SignUpForm.module.css'
 import {useDispatch, useSelector} from "react-redux";
-import {createUser, ONCHANGE_REGISTER_DATA} from "../../store/Actions/authActions";
+import {createUser, ONCHANGE_REGISTER_DATA} from "../../store/Actions/userActions";
 
-export const CreateUserForm = () => {
+export const SignUpForm = () => {
     const state = useSelector(state => state.create_user)
     const dispatch = useDispatch()
 
