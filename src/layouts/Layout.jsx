@@ -1,4 +1,5 @@
-import {Fragment} from "react";
+import React, {Fragment} from "react";
+import {Outlet} from 'react-router-dom'
 import {Header} from "../components/Header/Header";
 import css from './Layout.module.css'
 import {Player} from "../components/Player/Player";
@@ -8,7 +9,7 @@ export const Layout = (props) => {
         <Fragment>
             <Header/>
             <main className={css.container}>
-                {props.children}
+                <Outlet/>
             </main>
             <footer>
                 <Player/>

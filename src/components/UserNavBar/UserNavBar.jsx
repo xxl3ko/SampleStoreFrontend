@@ -3,8 +3,6 @@ import css from './UserNavBar.module.css'
 import {useDispatch, useSelector} from "react-redux";
 import {getUser, logoutUser} from "../../store/Actions/userActions";
 import {Link} from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 
 export const UserNavBar = () => {
 
@@ -21,12 +19,10 @@ export const UserNavBar = () => {
 
     if (!state.isLogged) {
         return (
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                    <Nav.Link href="/auth/login">Login</Nav.Link>
-                    <Nav.Link href="/auth/sign_up">Sign up</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
+            <div>
+                <Link to="/auth/login">Login</Link>
+                <Link to="/auth/signup">Sign up</Link>
+            </div>
             /* <div className={css.container}>
                  <div className={css.test}>
                      <Link to='/auth/login'>Login</Link>

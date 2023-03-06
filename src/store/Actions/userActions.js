@@ -1,9 +1,11 @@
 import {
-    createUserRequest,
     loginRequest,
     logoutRequest,
+    signupRequest,
     userRequest
 } from "../../api/userApi";
+import {Navigate} from "react-router-dom";
+
 
 export const CREATE_USER_SUCCESS = 'CREATE_USER_SUCCESS'
 export const CREATE_USER_FAILURE = 'CREATE_USER_FAILURE'
@@ -15,12 +17,10 @@ export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS'
 
 export const GET_USER = 'GET_USER'
 
-export const ONCHANGE_REGISTER_DATA = 'ONCHANGE_REGISTER_DATA'
 
-
-export const createUser = (config) => {
+export const signupUser = (config) => {
     return async dispatch => {
-        const response = await createUserRequest(config)
+        const response = await signupRequest(config)
         dispatch({
             type: CREATE_USER_SUCCESS,
         })
@@ -29,15 +29,30 @@ export const createUser = (config) => {
 
 export const loginUser = (config) => {
     return async dispatch => {
+        try {
+            const response = await loginRequest(config)
+            localStorage.setItem('token', response.data.auth_token)
+            dispatch({
+                type: LOGIN_SUCCESS
+            })
+            console.log(response)
+            //<Navigate to='/'/>
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    }
+
+/*export const loginUser = (config) => {
+    return async dispatch => {
         const response = await loginRequest(config)
-        //const history = useHistory()
         localStorage.setItem('token', response.data.auth_token)
         dispatch({
             type: LOGIN_SUCCESS
         })
-        //history.push('/welcome')
+        return <Navigate to='/'/>
     }
-}
+}*/
 
 export const getUser = (config) => {
     return async dispatch => {

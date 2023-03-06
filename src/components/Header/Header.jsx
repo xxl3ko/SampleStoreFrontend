@@ -1,23 +1,19 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react'
+import css from './Header.module.css'
+import {NavLink} from "react-router-dom";
 import {UserNavBar} from "../UserNavBar/UserNavBar";
 
 export const Header = () => {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
-            <Container>
-                <Navbar.Brand href="/welcome">boq</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="/welcome">Welcome</Nav.Link>
-                        <Nav.Link href="/packs">Packs</Nav.Link>
-                        <Nav.Link href="/plugins">Plugins</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
+        <div className={css.container}>
+            <div>
+                <NavLink to="/">Welcome</NavLink>
+                <NavLink to="/packs">Packs</NavLink>
+                <NavLink to="/plugins">Plugins</NavLink>
+            </div>
+            <div>
                 <UserNavBar/>
-            </Container>
-        </Navbar>
+            </div>
+        </div>
     );
 }

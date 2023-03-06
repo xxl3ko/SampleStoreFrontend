@@ -2,9 +2,9 @@ import {makeRequest} from "./api";
 
 const URL = '/auth'
 
-export const createUserRequest = (config) => makeRequest({
+export const signupRequest = (config) => makeRequest({
     method: "POST",
-    url: `${URL}`,
+    url: `${URL}/users/`,
     data: {
         ...config
     },

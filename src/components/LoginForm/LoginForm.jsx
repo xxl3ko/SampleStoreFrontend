@@ -1,39 +1,33 @@
 import React, {useState} from 'react'
 import css from './LoginForm.module.css'
-
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {loginUser} from "../../store/Actions/userActions";
 
 
 export const LoginForm = () => {
-    const [username, setUsername] = useState()
-    const [password, setPassword] = useState()
-    //const state = useSelector(state => state.user)
+    const [data, setData] = useState({})
     const dispatch = useDispatch()
-
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-
-        dispatch(loginUser({
-            username,
-            password,
-        }))
+        dispatch(loginUser({...data}))
     }
 
     return (
         <form className={css.form} onSubmit={handleFormSubmit}>
-            <label>Username:</label>
             <input
                 type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}/>
-            <label>Password:</label>
+                value={data.username}
+                onChange={(e) => setData({...data, username: e.target.value})}
+                placeholder='Username'
+            />
             <input
                 type="text"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}/>
-            <button>LOGIN</button>
+                value={data.password}
+                onChange={(e) => setData({...data, password: e.target.value})}
+                placeholder='Password'
+            />
+            <button>Login</button>
         </form>
     )
 }
