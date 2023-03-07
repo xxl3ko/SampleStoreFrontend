@@ -7,8 +7,7 @@ import {LoginForm} from "../../components/LoginForm/LoginForm";
 import {useSelector} from "react-redux";
 
 export const Auth = () => {
-    const location = useLocation()
-    console.log(location)
+    //const location = useLocation()
     //const state = useSelector(state => state.user)
     //const history = useHistory()
 

@@ -1,16 +1,24 @@
 import React, {useState} from 'react'
 import css from './LoginForm.module.css'
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {loginUser} from "../../store/Actions/userActions";
+import {useNavigate} from "react-router-dom";
 
 
 export const LoginForm = () => {
-    const [data, setData] = useState({})
-    const dispatch = useDispatch()
 
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
+    const [data, setData] = useState({})
+    const state = useSelector(state => state.user)
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
         dispatch(loginUser({...data}))
+    }
+
+    if (state.isLogged) {
+        return navigate('/')
     }
 
     return (

@@ -4,7 +4,7 @@ import {
     signupRequest,
     userRequest
 } from "../../api/userApi";
-import {Navigate} from "react-router-dom";
+import {redirect} from "react-router-dom";
 
 
 export const CREATE_USER_SUCCESS = 'CREATE_USER_SUCCESS'
@@ -32,16 +32,16 @@ export const loginUser = (config) => {
         try {
             const response = await loginRequest(config)
             localStorage.setItem('token', response.data.auth_token)
+            console.log(response)
             dispatch({
                 type: LOGIN_SUCCESS
             })
-            console.log(response)
-            //<Navigate to='/'/>
+            redirect('http://localhost:3000/packs')
         } catch (error) {
             console.log(error)
         }
     }
-    }
+}
 
 /*export const loginUser = (config) => {
     return async dispatch => {
@@ -50,7 +50,6 @@ export const loginUser = (config) => {
         dispatch({
             type: LOGIN_SUCCESS
         })
-        return <Navigate to='/'/>
     }
 }*/
 
