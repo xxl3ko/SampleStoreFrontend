@@ -9,13 +9,9 @@
     margin-left: 20px;
 }
 
-
 .button {
     cursor: pointer;
-
-    background-color: white;
-    color: black;
     padding: 0.5rem 1.25rem;
-    border: solid 1px;
+    border: solid 1px white;
     border-radius: 100px;
 }

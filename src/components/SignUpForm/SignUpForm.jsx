@@ -10,33 +10,30 @@ export const SignUpForm = () => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-
-        dispatch(signupUser({
-            ...data
-            /*username,
-            email,
-            password,*/
-        }))
+        dispatch(signupUser({...data}))
     }
-    console.log({...data})
+
     return (
-        <form className={css.form} onSubmit={handleFormSubmit}>
-            <input
-                type="text" value={data.username}
-                onChange={(e) => setData({...data, username: e.target.value})}
-                placeholder='Username'
-            />
-            <input
-                type="text" value={data.email}
-                onChange={(e) => setData({...data, email: e.target.value})}
-                placeholder='Email'
-            />
-            <input
-                type="text" value={data.password}
-                onChange={(e) => setData({...data, password: e.target.value})}
-                placeholder='Password'
-            />
-            <button>Signup</button>
-        </form>
+        <div>
+            <h1>Signup</h1>
+            <form className={css.form} onSubmit={handleFormSubmit}>
+                <input
+                    type="text" value={data.username}
+                    onChange={(e) => setData({...data, username: e.target.value})}
+                    placeholder='Username'
+                />
+                <input
+                    type="text" value={data.email}
+                    onChange={(e) => setData({...data, email: e.target.value})}
+                    placeholder='Email'
+                />
+                <input
+                    type="text" value={data.password}
+                    onChange={(e) => setData({...data, password: e.target.value})}
+                    placeholder='Password'
+                />
+                <button>Signup</button>
+            </form>
+        </div>
     )
 }
