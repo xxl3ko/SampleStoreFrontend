@@ -13,7 +13,7 @@ export const Packs = () => {
 
     useEffect(() => {
         dispatch(getPacks())
-    }, [])
+    }, [dispatch])
 
     return (
         <div className={css.container}>

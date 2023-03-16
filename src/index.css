@@ -10,6 +10,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 #root {
@@ -19,4 +20,8 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+    text-decoration: none;
 }

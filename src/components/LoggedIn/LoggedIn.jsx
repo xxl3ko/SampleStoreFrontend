@@ -13,7 +13,7 @@ export const LoggedIn = () => {
 
     useEffect(() => {
         dispatch(getUser())
-    }, [])
+    }, [dispatch])
 
     const handleLogout = () => {
         dispatch(logoutUser())

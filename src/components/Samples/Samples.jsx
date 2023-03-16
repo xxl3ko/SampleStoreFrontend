@@ -3,7 +3,8 @@ import css from "./Samples.module.css"
 import {useDispatch, useSelector} from "react-redux";
 import {getSamples} from "../../store/Actions/actions";
 import {setPlayerSrc} from "../../store/Actions/playerActions";
-import {PlusCircleOutlined} from "@ant-design/icons";
+import {PlusCircleOutlined,MinusCircleOutlined} from "@ant-design/icons";
+//import {addSampleToCart} from "../../store/Actions/samples";
 
 
 export const Samples = (packID) => {
@@ -13,18 +14,41 @@ export const Samples = (packID) => {
 
     useEffect(() => {
         dispatch(getSamples(packID))
-    }, [])
+    }, [dispatch])
 
     const playerSrc = (src) => {
         return dispatch(setPlayerSrc(src))
+    }
+
+    const handleAddSampleToCart = (data) => {
+        const playlist = JSON.parse(localStorage.getItem('playlist')) || []
+        playlist.push(data)
+        localStorage.setItem('playlist', JSON.stringify(playlist))
+    }
+
+    const handleRmSampleFromCart = (sample_id) => {
+        const playlist = JSON.parse(localStorage.getItem('playlist')).filter(item => item.id !== sample_id)
+        localStorage.setItem('playlist', JSON.stringify(playlist))
+
     }
 
     return (
         <div className={css.sample_list}>
             {stateSample.samples.map(sample => {
                 return (
-                    <div className={css.sample} onClick={() => playerSrc(sample.file_src)}>
-                        <div className={css.add_shoping_cart}><PlusCircleOutlined /></div>
+                    <div className={css.sample} key={sample.title} onClick={() => playerSrc(sample.file_src)}>
+                        <div
+                            className={css.add_shoping_cart}
+                            onClick={() => handleAddSampleToCart(sample)}
+                        >
+                            <PlusCircleOutlined/>
+                        </div>
+                        <div
+                            className={css.add_shoping_cart}
+                            onClick={() => handleRmSampleFromCart(sample.id)}
+                        >
+                            <MinusCircleOutlined/>
+                        </div>
                         <div className={css.cover}>
                             <img src={statePack.cover_src} alt=""/>
                         </div>

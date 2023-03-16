@@ -7,7 +7,7 @@ import {useNavigate} from "react-router-dom";
 
 export const LoginForm = () => {
 
-    const [data, setData] = useState({})
+    const [data, setData] = useState({username: '', password:''})
     const state = useSelector(state => state.user)
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -22,9 +22,12 @@ export const LoginForm = () => {
     }
 
     return (
-        <div>
+        <div className={css.login}>
             <h1>Login</h1>
             <form className={css.form} onSubmit={handleFormSubmit}>
+                {state.login_error.map(error => {
+                    return <div className={css.error}>{error}</div>
+                })}
                 <input
                     type="text"
                     value={data.username}
