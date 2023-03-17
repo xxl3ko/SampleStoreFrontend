@@ -14,7 +14,7 @@ export const Samples = (packID) => {
 
     useEffect(() => {
         dispatch(getSamples(packID))
-    }, [dispatch])
+    }, [packID, dispatch])
 
     const playerSrc = (src) => {
         return dispatch(setPlayerSrc(src))
@@ -29,8 +29,17 @@ export const Samples = (packID) => {
     const handleRmSampleFromCart = (sample_id) => {
         const playlist = JSON.parse(localStorage.getItem('playlist')).filter(item => item.id !== sample_id)
         localStorage.setItem('playlist', JSON.stringify(playlist))
-
     }
+
+    /*const hidden = (sample_id) => {
+        const ol = JSON.parse(localStorage.getItem('playlist')).filter(item => item.id === sample_id)
+        console.log(ol)
+        if (ol) {
+            return css.add_shoping_cart
+        } else {
+            return css.hidden
+        }
+    }*/
 
     return (
         <div className={css.sample_list}>
