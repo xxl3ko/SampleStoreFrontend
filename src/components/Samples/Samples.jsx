@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {getSamples} from "../../store/Actions/actions";
 import {setPlayerSrc} from "../../store/Actions/playerActions";
 import {PlusCircleOutlined,MinusCircleOutlined} from "@ant-design/icons";
+import {Test} from "../Test/Test";
 //import {addSampleToCart} from "../../store/Actions/samples";
 
 
@@ -62,6 +63,7 @@ export const Samples = (packID) => {
                             <img src={statePack.cover_src} alt=""/>
                         </div>
                         <div>{sample.title}</div>
+                        <Test/>
 
                     </div>
                 )

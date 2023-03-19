@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e064ba8-73b0-444b-bec8-8009825473ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_03_2023,_14_49_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_03_2023__14_49__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/Demo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/Demo.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Samples/Samples.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Actions/samples.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Actions/samplesActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Test/Test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test/Test.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +50,7 @@
       <recent name="$PROJECT_DIR$/src/components/TEMP" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/store/Actions" />
       <recent name="$PROJECT_DIR$/src/store/Reducers" />
@@ -102,6 +99,10 @@
       <workItem from="1678778904252" duration="221000" />
       <workItem from="1678861381226" duration="342000" />
       <workItem from="1678982349991" duration="5750000" />
+      <workItem from="1679035407895" duration="82000" />
+      <workItem from="1679035512713" duration="450000" />
+      <workItem from="1679207485518" duration="16000" />
+      <workItem from="1679217172735" duration="1688000" />
     </task>
     <servers />
   </component>
