@@ -25,7 +25,12 @@
     width: 36px;
     height: 36px;
 }
-.title {}
+.title {
+    width: 300px;}
+
+.waveform {
+    width: 270px;
+}
 
 .hidden{
     visibility: hidden;

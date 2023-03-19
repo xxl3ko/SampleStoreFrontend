@@ -1,11 +1,11 @@
 import React from 'react'
-import {Test} from "../../components/Test/Test";
+import {Waveform} from "../../components/Waveform/Waveform";
 
 export const Welcome = () => {
     return (
         <div>
             <div>WELCOME</div>
-            <Test/>
+            <Waveform id='789' src='opppp'/>
         </div>
     )
 }

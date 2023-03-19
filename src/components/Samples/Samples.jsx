@@ -3,8 +3,8 @@ import css from "./Samples.module.css"
 import {useDispatch, useSelector} from "react-redux";
 import {getSamples} from "../../store/Actions/actions";
 import {setPlayerSrc} from "../../store/Actions/playerActions";
-import {PlusCircleOutlined,MinusCircleOutlined} from "@ant-design/icons";
-import {Test} from "../Test/Test";
+import {PlusCircleOutlined, MinusCircleOutlined} from "@ant-design/icons";
+import {Waveform} from "../Waveform/Waveform";
 //import {addSampleToCart} from "../../store/Actions/samples";
 
 
@@ -44,9 +44,11 @@ export const Samples = (packID) => {
 
     return (
         <div className={css.sample_list}>
+
             {stateSample.samples.map(sample => {
                 return (
                     <div className={css.sample} key={sample.title} onClick={() => playerSrc(sample.file_src)}>
+
                         <div
                             className={css.add_shoping_cart}
                             onClick={() => handleAddSampleToCart(sample)}
@@ -62,9 +64,12 @@ export const Samples = (packID) => {
                         <div className={css.cover}>
                             <img src={statePack.cover_src} alt=""/>
                         </div>
-                        <div>{sample.title}</div>
-                        <Test/>
-
+                        <div className={css.title}>
+                            {sample.title}
+                        </div>
+                        <div className={css.waveform}>
+                            <Waveform id={sample.id} src={sample.file_src}/>
+                        </div>
                     </div>
                 )
             })
