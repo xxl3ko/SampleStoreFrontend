@@ -1,22 +1,14 @@
 import css from './PackLabel.module.css'
-import {getLabel} from "../../store/Actions/labelsActions";
-import {useDispatch, useSelector} from "react-redux";
-import {useEffect} from "react";
+
+import {useSelector} from "react-redux";
 
 export const PackLabel = () => {
 
-    const dispatch = useDispatch()
-    const state = useSelector(state => state.label)
-
-    useEffect(() => {
-        dispatch(getLabel(1))
-    }, [dispatch])
-
-    console.log(state)
+    const state = useSelector(state => state.pack.pack.label)
 
     return (
         <div className={css.label}>
-            by: {state.label.title}
+            by: {'sfdf'}
         </div>
     )
 }

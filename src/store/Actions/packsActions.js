@@ -31,12 +31,6 @@ export const getPack = (id) => {
                 type: GET_PACK_SUCCESS,
                 payload: packResponse.data
             })
-            /*const labelResponse = await labelRequest(1)
-            console.log(labelResponse.data)
-            dispatch({
-                type: GET_LABEL_SUCCESS,
-                payload: labelResponse.data
-            })*/
         } catch (error) {
             console.log(error)
         }

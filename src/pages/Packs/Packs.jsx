@@ -15,6 +15,8 @@ export const Packs = () => {
         dispatch(getPacks())
     }, [dispatch])
 
+    console.log(state)
+
     return (
         <div className={css.container}>
             {state.packs.map(pack => {

@@ -1,21 +1,17 @@
-import React, {useEffect} from "react";
+
 import css from "./Samples.module.css"
+
 import {useDispatch, useSelector} from "react-redux";
-import {getSamples} from "../../store/Actions/packsActions";
 import {setPlayerSrc} from "../../store/Actions/playerActions";
 import {PlusCircleOutlined, MinusCircleOutlined} from "@ant-design/icons";
 import {Waveform} from "../Waveform/Waveform";
-//import {addSampleToCart} from "../../store/Actions/samples";
 
 
-export const Samples = (packID) => {
+export const Samples = () => {
     const dispatch = useDispatch()
-    const statePack = useSelector(state => state.pack.pack)
-    const stateSample = useSelector(state => state.samples)
+    const state = useSelector(state => state.pack.pack)
 
-    useEffect(() => {
-        dispatch(getSamples(packID))
-    }, [packID, dispatch])
+
 
     const playerSrc = (src) => {
         return dispatch(setPlayerSrc(src))
@@ -32,18 +28,8 @@ export const Samples = (packID) => {
         localStorage.setItem('playlist', JSON.stringify(playlist))
     }
 
-    /*const hidden = (sample_id) => {
-        const ol = JSON.parse(localStorage.getItem('playlist')).filter(item => item.id === sample_id)
-        console.log(ol)
-        if (ol) {
-            return css.add_shoping_cart
-        } else {
-            return css.hidden
-        }
-    }*/
-
     return (<div className={css.sample_list}>
-        {stateSample.samples.map(sample => {
+        {state.samples.map(sample => {
             return (<div className={css.sample} key={sample.title} onClick={() => playerSrc(sample.file_src)}>
                 <div
                     className={css.add_shoping_cart}
@@ -58,7 +44,7 @@ export const Samples = (packID) => {
                     <MinusCircleOutlined/>
                 </div>
                 <div className={css.cover}>
-                    <img src={statePack.cover_src} alt=""/>
+                    <img src={state.cover_src} alt=""/>
                 </div>
                 <div className={css.title}>
                     {sample.title}
