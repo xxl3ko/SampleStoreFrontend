@@ -42,38 +42,31 @@ export const Samples = (packID) => {
         }
     }*/
 
-    return (
-        <div className={css.sample_list}>
-
-            {stateSample.samples.map(sample => {
-                return (
-                    <div className={css.sample} key={sample.title} onClick={() => playerSrc(sample.file_src)}>
-
-                        <div
-                            className={css.add_shoping_cart}
-                            onClick={() => handleAddSampleToCart(sample)}
-                        >
-                            <PlusCircleOutlined/>
-                        </div>
-                        <div
-                            className={css.add_shoping_cart}
-                            onClick={() => handleRmSampleFromCart(sample.id)}
-                        >
-                            <MinusCircleOutlined/>
-                        </div>
-                        <div className={css.cover}>
-                            <img src={statePack.cover_src} alt=""/>
-                        </div>
-                        <div className={css.title}>
-                            {sample.title}
-                        </div>
-                        <div className={css.waveform}>
-                            <Waveform id={sample.id} src={sample.file_src}/>
-                        </div>
-                    </div>
-                )
-            })
-            }
-        </div>
-    )
+    return (<div className={css.sample_list}>
+        {stateSample.samples.map(sample => {
+            return (<div className={css.sample} key={sample.title} onClick={() => playerSrc(sample.file_src)}>
+                <div
+                    className={css.add_shoping_cart}
+                    onClick={() => handleAddSampleToCart(sample)}
+                >
+                    <PlusCircleOutlined/>
+                </div>
+                <div
+                    className={css.add_shoping_cart}
+                    onClick={() => handleRmSampleFromCart(sample.id)}
+                >
+                    <MinusCircleOutlined/>
+                </div>
+                <div className={css.cover}>
+                    <img src={statePack.cover_src} alt=""/>
+                </div>
+                <div className={css.title}>
+                    {sample.title}
+                </div>
+                <div className={css.waveform}>
+                    <Waveform id={sample.id} src={sample.file_src}/>
+                </div>
+            </div>)
+        })}
+    </div>)
 }
