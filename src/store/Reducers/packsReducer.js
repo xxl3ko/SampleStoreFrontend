@@ -1,4 +1,4 @@
-import {GET_PACKS} from "../Actions/actions";
+import {GET_PACKS_SUCCESS} from "../Actions/packsActions";
 
 const initialState = {
     packs: []
@@ -6,7 +6,7 @@ const initialState = {
 
 export const packsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case GET_PACKS:
+        case GET_PACKS_SUCCESS:
             return {
                 ...state,
                 packs: action.payload

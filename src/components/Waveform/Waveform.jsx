@@ -18,7 +18,7 @@ export const Waveform = (props) => {
         });
 
         wavesurfer.load(props.src);
-    },[props.id])
+    },[props.id, props.src])
 
 
     return (

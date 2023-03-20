@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import css from "./Samples.module.css"
 import {useDispatch, useSelector} from "react-redux";
-import {getSamples} from "../../store/Actions/actions";
+import {getSamples} from "../../store/Actions/packsActions";
 import {setPlayerSrc} from "../../store/Actions/playerActions";
 import {PlusCircleOutlined, MinusCircleOutlined} from "@ant-design/icons";
 import {Waveform} from "../Waveform/Waveform";

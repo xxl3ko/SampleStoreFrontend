@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import css from './Packs.module.css'
 
 import {useDispatch, useSelector} from "react-redux";
-import {getPacks} from "../../store/Actions/actions";
+import {getPacks} from "../../store/Actions/packsActions";
 import {PackCard} from "../../components/PackCard/PackCard";
 
 

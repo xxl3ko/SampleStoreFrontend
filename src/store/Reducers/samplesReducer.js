@@ -1,4 +1,4 @@
-import {GET_SAMPLES} from "../Actions/actions";
+import {GET_SAMPLES} from "../Actions/packsActions";
 
 const initialState = {
     samples: [],
