@@ -9,7 +9,7 @@ import {Waveform} from "../Waveform/Waveform";
 
 export const Samples = () => {
     const dispatch = useDispatch()
-    const state = useSelector(state => state.pack.pack)
+    const state = useSelector(state => state.pack)
 
 
 

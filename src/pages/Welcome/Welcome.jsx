@@ -1,11 +1,9 @@
-import React from 'react'
-import {Waveform} from "../../components/Waveform/Waveform";
+import css from './Welcome.module.css'
 
 export const Welcome = () => {
     return (
-        <div>
-            <div>WELCOME</div>
-            <Waveform id='789' src='opppp'/>
-        </div>
+            <div className={css.container}>
+                WELCOME
+            </div>
     )
 }

@@ -1,7 +1,6 @@
 import css from './PackHeader.module.css'
 
 import {useSelector} from "react-redux";
-import {PackLabel} from "../PackLabel/PackLabel";
 
 export const PackHeader = () => {
 
@@ -9,13 +8,16 @@ export const PackHeader = () => {
 
     return (
         <div className={css.header}>
-            <img className={css.cover} src={state.pack.cover_src} alt=""/>
+            <img className={css.cover} src={state.cover_src} alt=""/>
             <div className={css.content}>
                 <div className={css.label}>
-                    <PackLabel/>
+                    <h3>{state.label.title}</h3>
                 </div>
                 <div className={css.title}>
-                    <h1>{state.pack.title}</h1>
+                    <h1>{state.title}</h1>
+                </div>
+                <div className={css.metadata}>
+                    {state.genre.title} | {state.samples.length} samples
                 </div>
             </div>
         </div>

@@ -6,7 +6,6 @@ export const Waveform = (props) => {
     useEffect(() => {
         const wavesurfer = WaveSurfer.create({
             container: `#waveform-${props.id}`,
-            //waveColor: 'red',
             progressColor: 'blue',
             maxCanvasWidth: 100,
             height: 32,
