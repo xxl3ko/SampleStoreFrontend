@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2e064ba8-73b0-444b-bec8-8009825473ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PackHeader/PackHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PackHeader/PackHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PackLabel/PackLabel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PackLabel/PackLabel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pack/Pack.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pack/Pack.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Packs/Packs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Packs/Packs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Actions/packsActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Actions/packsActions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +102,8 @@
       <workItem from="1679217172735" duration="1978000" />
       <workItem from="1679251939961" duration="2833000" />
       <workItem from="1679306884808" duration="57000" />
-      <workItem from="1679333049365" duration="4017000" />
+      <workItem from="1679333049365" duration="4145000" />
+      <workItem from="1679585284393" duration="2679000" />
     </task>
     <servers />
   </component>
