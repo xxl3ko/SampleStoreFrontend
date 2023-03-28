@@ -4,6 +4,7 @@ import {packsReducer} from "./packsReducer";
 import {packReducer} from "./packReducer";
 import {samplesReducer} from "./samplesReducer";
 import {userReducer} from "./userReducer";
+import {relationReducer} from "./relationReducer";
 
 
 
@@ -13,4 +14,5 @@ export const rootReducer = combineReducers({
     samples: samplesReducer,
     player: playerReducer,
     user: userReducer,
+    rels: relationReducer,
 })

@@ -1,10 +1,10 @@
-
 import css from "./Samples.module.css"
 
 import {useDispatch, useSelector} from "react-redux";
 import {setPlayerSrc} from "../../store/Actions/playerActions";
 import {PlusCircleOutlined, MinusCircleOutlined} from "@ant-design/icons";
 import {Waveform} from "../Waveform/Waveform";
+import {Favorite} from "../Favorite/Favorite";
 
 
 export const Samples = () => {
@@ -51,6 +51,9 @@ export const Samples = () => {
                 </div>
                 <div className={css.waveform}>
                     <Waveform id={sample.id} src={sample.file_src}/>
+                </div>
+                <div className={css.favorite}>
+                    <Favorite rels={sample.rels}/>
                 </div>
             </div>)
         })}

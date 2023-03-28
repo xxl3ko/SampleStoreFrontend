@@ -2,6 +2,7 @@ import {GET_PACK_SUCCESS} from "../Actions/packsActions";
 
 const initialState = {
     samples: [],
+    rels: [],
     label: {},
     genre: {},
 }

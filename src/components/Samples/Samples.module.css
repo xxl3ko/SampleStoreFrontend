@@ -32,6 +32,13 @@
     width: 270px;
 }
 
+.favorite {
+    display: flex;
+    min-width: 40px;
+    justify-content: center;
+    font-size: 26px;
+}
+
 .hidden{
     visibility: hidden;
 }
