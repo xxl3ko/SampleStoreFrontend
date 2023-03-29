@@ -1,30 +1,35 @@
 import {HeartOutlined, HeartFilled} from "@ant-design/icons";
-import {Fragment, useEffect} from "react";
-import {useDispatch, useSelector} from "react-redux";
+import {Fragment} from "react";
+import {useDispatch} from "react-redux";
+import {sampleRelation} from "../../store/Actions/relationActions";
 
 export const Favorite = (props) => {
-
     const dispatch = useDispatch()
-    useEffect(() => {},[])
 
-    const handleAddToFavorite = () => {
-
+    const handleAddToFavorite = (data) => {
+        return dispatch(sampleRelation({
+            sampleId: data,
+            fav: true
+        }))
     }
 
-    const handleRemoveFromFavorite = () => {
-
+    const handleRemoveFromFavorite = (data) => {
+        return dispatch(sampleRelation({
+            sampleId: data,
+            fav: false
+        }))
     }
 
-    if (props.rels[0].fav) {
+    if (props.rels[0]?.fav) {
         return (
             <Fragment>
-                <HeartFilled/>
+                <HeartFilled onClick={() => handleRemoveFromFavorite(props.id)}/>
             </Fragment>
         )
     } else {
         return (
             <Fragment>
-                <HeartOutlined/>
+                <HeartOutlined onClick={() => handleAddToFavorite(props.id)}/>
             </Fragment>
         )
     }

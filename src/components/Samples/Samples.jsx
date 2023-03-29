@@ -53,7 +53,7 @@ export const Samples = () => {
                     <Waveform id={sample.id} src={sample.file_src}/>
                 </div>
                 <div className={css.favorite}>
-                    <Favorite rels={sample.rels}/>
+                    <Favorite id={sample.id} rels={sample.rels}/>
                 </div>
             </div>)
         })}

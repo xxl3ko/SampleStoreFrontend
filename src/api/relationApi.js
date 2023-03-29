@@ -4,9 +4,11 @@ const URL = '/relation'
 
 export const sampleRelationRequest = (data) => makeRequest({
     method: "PATCH",
-    url: `${URL}/${data.sampleId}`,
+    url: `${URL}/${data.sampleId}/`,
     headers: {
         Authorization: `Token ${localStorage.getItem('token')}`
     },
-    data: {data.rels}
+    data: {
+        fav: data.fav
+    }
 })
