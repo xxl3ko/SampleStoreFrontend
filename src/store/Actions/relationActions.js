@@ -14,7 +14,7 @@ export const sampleRelation = (data) => {
             const response = await sampleRelationRequest(data)
             dispatch({
                 type: PATCH_FAVORITE_SUCCESS,
-                payload: response.data
+                payload: response.data,
             })
         } catch (error) {
             console.log(error)

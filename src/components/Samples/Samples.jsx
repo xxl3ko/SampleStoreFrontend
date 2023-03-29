@@ -12,7 +12,6 @@ export const Samples = () => {
     const state = useSelector(state => state.pack)
 
 
-
     const playerSrc = (src) => {
         return dispatch(setPlayerSrc(src))
     }
@@ -29,7 +28,7 @@ export const Samples = () => {
     }
 
     return (<div className={css.sample_list}>
-        {state.samples.map(sample => {
+        {state.samples.map((sample, index) => {
             return (<div className={css.sample} key={sample.title} onClick={() => playerSrc(sample.file_src)}>
                 <div
                     className={css.add_shoping_cart}
@@ -53,7 +52,7 @@ export const Samples = () => {
                     <Waveform id={sample.id} src={sample.file_src}/>
                 </div>
                 <div className={css.favorite}>
-                    <Favorite id={sample.id} rels={sample.rels}/>
+                    <Favorite index={index} id={sample.id}/>
                 </div>
             </div>)
         })}
