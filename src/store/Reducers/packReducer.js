@@ -12,14 +12,16 @@ export const packReducer = (state = initialState, action) => {
                 ...action.payload,
             };
         case PATCH_FAVORITE_SUCCESS:
-            state.samples.map((sample, index) => {
-                if (sample.id === action.payload.sample) {
-                    state.samples[index].rels[0] = action.payload
-                }
-            })
-            //state.samples.filter((sample, index) => {sample.id === action.payload.sample})
-
-            return state
+            state.samples[action.payload.sampleIndex].rels[0] = action.payload.data
+            return {
+                ...state,
+                /*samples: state.samples.map((sample) => {
+                    if (sample.id === action.payload.sample) {
+                        sample.rels[0] = action.payload
+                    }
+                    return sample
+                })*/
+            }
         default:
             return state
     }

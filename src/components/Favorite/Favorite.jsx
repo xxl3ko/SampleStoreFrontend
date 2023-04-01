@@ -7,33 +7,33 @@ export const Favorite = (props) => {
     const state = useSelector(state => state.pack.samples[props.index])
     const dispatch = useDispatch()
 
-    const handleAddToFavorite = (data) => {
+    const handleChangeFavorite = (data) => {
         return dispatch(sampleRelation({
-            sampleId: data,
-            fav: true
+            request: {
+                sampleId: props.id,
+                ...data
+            },
+            sampleIndex: props.index
         }))
     }
 
-    const handleRemoveFromFavorite = (data) => {
+    /*const handleRemoveFromFavorite = (data) => {
         return dispatch(sampleRelation({
             sampleId: data,
             fav: false
         }))
-    }
+    }*/
 
-    //if (props.rels[0]?.fav) {
     if (state.rels[0]?.fav) {
-        console.log('TRUE')
         return (
             <Fragment>
-                <HeartFilled onClick={() => handleRemoveFromFavorite(props.id)}/>
+                <HeartFilled onClick={() => handleChangeFavorite({fav: false})}/>
             </Fragment>
         )
     } else {
-        console.log('FALSE')
         return (
             <Fragment>
-                <HeartOutlined onClick={() => handleAddToFavorite(props.id)}/>
+                <HeartOutlined onClick={() => handleChangeFavorite({fav: true})}/>
             </Fragment>
         )
     }

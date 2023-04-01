@@ -1,22 +1,21 @@
 import {sampleRelationRequest} from "../../api/relationApi";
 
-//export const ADD_SAMPLE_TO_CART = 'ADD_SAMPLE_TO_CART'
-export const GET_IS_FAVORITE_SUCCESS = 'GET_IS_FAVORITE_SUCCESS'
 export const PATCH_FAVORITE_SUCCESS = 'PATCH_FAVORITE_SUCCESS'
-
-/*export const addSampleToCart = (data) => {
-    console.log(data)
-}*/
 
 export const sampleRelation = (data) => {
     return async dispatch => {
         try {
-            const response = await sampleRelationRequest(data)
+            const response = await sampleRelationRequest(data.request)
+            console.log(response.data)
             dispatch({
                 type: PATCH_FAVORITE_SUCCESS,
-                payload: response.data,
+                payload: {
+                    data: response.data,
+                    sampleIndex: data.sampleIndex,
+                },
             })
-        } catch (error) {
+        } catch
+            (error) {
             console.log(error)
         }
     }
