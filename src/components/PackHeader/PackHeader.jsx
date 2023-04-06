@@ -17,7 +17,7 @@ export const PackHeader = () => {
                     <h1>{state.name}</h1>
                 </div>
                 <div className={css.metadata}>
-                    {state.genre.title} | {state.samples.length} samples
+                    {state.genre.name} | {state.samples.length} samples
                 </div>
             </div>
         </div>

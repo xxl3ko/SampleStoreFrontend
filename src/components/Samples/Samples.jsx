@@ -43,9 +43,9 @@ export const Samples = () => {
                     <MinusCircleOutlined/>
                 </div>
                 <div className={css.cover}>
-                    <img src={state.cover_src} alt=""/>
+                    <img src={state.cover} alt=""/>
                 </div>
-                <div className={css.title}>
+                <div className={css.name}>
                     {sample.name}
                 </div>
                 <div className={css.waveform}>

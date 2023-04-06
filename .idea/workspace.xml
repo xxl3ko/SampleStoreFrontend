@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2e064ba8-73b0-444b-bec8-8009825473ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Favorite/Favorite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Favorite/Favorite.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Actions/relationActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Actions/relationActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Reducers/packReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Reducers/packReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Reducers/relationReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Reducers/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Samples/Samples.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +111,11 @@
       <workItem from="1680029296191" duration="2900000" />
       <workItem from="1680083726844" duration="1800000" />
       <workItem from="1680158340493" duration="7132000" />
+      <workItem from="1680367940793" duration="165000" />
+      <workItem from="1680518881695" duration="1212000" />
+      <workItem from="1680537991023" duration="22000" />
+      <workItem from="1680685913423" duration="31000" />
+      <workItem from="1680761245409" duration="4986000" />
     </task>
     <servers />
   </component>
