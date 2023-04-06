@@ -1,0 +1,24 @@
+/* const handleAddSampleToCart = (data) => {
+    const playlist = JSON.parse(localStorage.getItem('playlist')) || []
+    playlist.push(data)
+    localStorage.setItem('playlist', JSON.stringify(playlist))
+}
+
+const handleRmSampleFromCart = (sample_id) => {
+    const playlist = JSON.parse(localStorage.getItem('playlist')).filter(item => item.id !== sample_id)
+    localStorage.setItem('playlist', JSON.stringify(playlist))
+}
+
+
+<div
+    className={css.add_shoping_cart}
+    onClick={() => handleAddSampleToCart(sample)}
+>
+    <PlusCircleOutlined/>
+</div>
+<div
+    className={css.add_shoping_cart}
+    onClick={() => handleRmSampleFromCart(sample.id)}
+>
+    <MinusCircleOutlined/>
+</div> */
