@@ -30,9 +30,12 @@ export const Samples = () => {
                     <Waveform id={sample.id} src={sample.file}/>
                 </div>
                 <div className={css.tempo}>
-                    tempo
+                    {sample.tempo}
                 </div>
                 <div className={css.favorite}>
+                    <Favorite index={index} id={sample.id}/>
+                </div>
+                <div className={css.download}>
                     <Favorite index={index} id={sample.id}/>
                 </div>
             </div>)
