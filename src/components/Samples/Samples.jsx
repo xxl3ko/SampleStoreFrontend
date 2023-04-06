@@ -29,7 +29,7 @@ export const Samples = () => {
 
     return (<div className={css.sample_list}>
         {state.samples.map((sample, index) => {
-            return (<div className={css.sample} key={sample.title} onClick={() => playerSrc(sample.file_src)}>
+            return (<div className={css.sample} key={sample.name} onClick={() => playerSrc(sample.file_src)}>
                 <div
                     className={css.add_shoping_cart}
                     onClick={() => handleAddSampleToCart(sample)}
@@ -46,7 +46,7 @@ export const Samples = () => {
                     <img src={state.cover_src} alt=""/>
                 </div>
                 <div className={css.title}>
-                    {sample.title}
+                    {sample.name}
                 </div>
                 <div className={css.waveform}>
                     <Waveform id={sample.id} src={sample.file_src}/>

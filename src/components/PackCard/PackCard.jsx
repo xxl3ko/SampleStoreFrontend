@@ -8,10 +8,10 @@ export const PackCard = (props) => {
         <div className={css.packCard} key={props.pack.id}>
             <Link to={`/packs/${props.pack.id}`}>
                 <div className={css.cover}>
-                    <img src={props.pack.cover_src} alt=""></img>
+                    <img src={props.pack.cover} alt=""></img>
                 </div>
                 <div>
-                    {props.pack.title}
+                    {props.pack.name}
                 </div>
                 <div>
                     LABEL

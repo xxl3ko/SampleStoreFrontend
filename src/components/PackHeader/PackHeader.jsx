@@ -8,13 +8,13 @@ export const PackHeader = () => {
 
     return (
         <div className={css.header}>
-            <img className={css.cover} src={state.cover_src} alt=""/>
+            <img className={css.cover} src={state.cover} alt=""/>
             <div className={css.content}>
                 <div className={css.label}>
-                    <h3>{state.label.title}</h3>
+                    <h3>{state.label.name}</h3>
                 </div>
                 <div className={css.title}>
-                    <h1>{state.title}</h1>
+                    <h1>{state.name}</h1>
                 </div>
                 <div className={css.metadata}>
                     {state.genre.title} | {state.samples.length} samples
