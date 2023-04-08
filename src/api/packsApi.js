@@ -1,6 +1,6 @@
 import {makeRequest} from "./api";
 
-const URL = '/samplepack'
+const URL = '/pack'
 
 export const packsRequest = (config) => makeRequest({
     method: "GET",

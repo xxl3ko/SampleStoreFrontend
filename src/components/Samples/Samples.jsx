@@ -2,9 +2,9 @@ import css from "./Samples.module.css"
 
 import {useDispatch, useSelector} from "react-redux";
 import {setPlayerSrc} from "../../store/Actions/playerActions";
-import {PlusCircleOutlined, MinusCircleOutlined} from "@ant-design/icons";
 import {Waveform} from "../Waveform/Waveform";
 import {Favorite} from "../Favorite/Favorite";
+import {DownloadOutlined} from "@ant-design/icons";
 
 
 export const Samples = () => {
@@ -19,7 +19,7 @@ export const Samples = () => {
 
     return (<div className={css.sample_list}>
         {state.samples.map((sample, index) => {
-            return (<div className={css.sample} key={sample.name} onClick={() => playerSrc(sample.file_src)}>
+            return (<div className={css.sample} key={sample.name} onClick={() => playerSrc(sample.file)}>
                 <div className={css.cover}>
                     <img src={state.cover} alt=""/>
                 </div>
@@ -36,7 +36,7 @@ export const Samples = () => {
                     <Favorite index={index} id={sample.id}/>
                 </div>
                 <div className={css.download}>
-                    <Favorite index={index} id={sample.id}/>
+                    <DownloadOutlined />
                 </div>
             </div>)
         })}

@@ -1,5 +1,5 @@
-import {packRequest, packsRequest} from "../../api/samplepacks";
-import {samplesRequest} from "../../api/samples";
+import {packRequest, packsRequest} from "../../api/packsApi";
+import {samplesRequest} from "../../api/samplesApi";
 
 export const GET_PACKS_SUCCESS = 'GET_PACKS_SUCCESS'
 export const GET_PACK_SUCCESS = 'GET_PACK_SUCCESS'

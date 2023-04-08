@@ -10,11 +10,11 @@ export const PackCard = (props) => {
                 <div className={css.cover}>
                     <img src={props.pack.cover} alt=""></img>
                 </div>
-                <div>
+                <div className={css.name}>
                     {props.pack.name}
                 </div>
-                <div>
-                    LABEL
+                <div className={css.label}>
+                    {props.pack.label.name}
                 </div>
             </Link>
         </div>

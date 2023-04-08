@@ -24,16 +24,16 @@ export const Favorite = (props) => {
         }))
     }*/
 
-    if (state.rels[0]?.fav) {
+    if (state.rels[0]?.isFavorite) {
         return (
             <Fragment>
-                <HeartFilled onClick={() => handleChangeFavorite({fav: false})}/>
+                <HeartFilled onClick={() => handleChangeFavorite({isFavorite: false})}/>
             </Fragment>
         )
     } else {
         return (
             <Fragment>
-                <HeartOutlined onClick={() => handleChangeFavorite({fav: true})}/>
+                <HeartOutlined onClick={() => handleChangeFavorite({isFavorite: true})}/>
             </Fragment>
         )
     }

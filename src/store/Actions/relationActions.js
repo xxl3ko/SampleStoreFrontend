@@ -6,7 +6,6 @@ export const sampleRelation = (data) => {
     return async dispatch => {
         try {
             const response = await sampleRelationRequest(data.request)
-            console.log(response.data)
             dispatch({
                 type: PATCH_FAVORITE_SUCCESS,
                 payload: {

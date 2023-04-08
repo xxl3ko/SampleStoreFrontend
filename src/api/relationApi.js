@@ -9,6 +9,6 @@ export const sampleRelationRequest = (data) => makeRequest({
         Authorization: `Token ${localStorage.getItem('token')}`
     },
     data: {
-        fav: data.fav
+        isFavorite: data.isFavorite
     }
 })
