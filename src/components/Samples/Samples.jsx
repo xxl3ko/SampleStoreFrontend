@@ -5,6 +5,7 @@ import {setPlayerSrc} from "../../store/Actions/playerActions";
 import {Waveform} from "../Waveform/Waveform";
 import {Favorite} from "../Favorite/Favorite";
 import {DownloadOutlined} from "@ant-design/icons";
+import {sampleDownload} from "../../store/Actions/samplesActions";
 
 
 export const Samples = () => {
@@ -14,6 +15,10 @@ export const Samples = () => {
 
     const playerSrc = (src) => {
         return dispatch(setPlayerSrc(src))
+    }
+
+    const dSample = (data) => {
+        return dispatch(sampleDownload(data))
     }
 
 
@@ -36,7 +41,7 @@ export const Samples = () => {
                     <Favorite index={index} id={sample.id}/>
                 </div>
                 <div className={css.download}>
-                    <DownloadOutlined />
+                    <DownloadOutlined onClick={() => dSample(sample.id)}/>
                 </div>
             </div>)
         })}
