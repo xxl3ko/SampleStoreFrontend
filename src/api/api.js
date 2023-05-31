@@ -6,3 +6,8 @@ export const makeRequest = (config) => {
     config.url = `${API_URL}${config.url}`
     return axios(config)
 }
+
+/*export const makeRequest = (config) => {
+    config.url = `${API_URL}${config.url}`
+    return axios(config)
+}*/
