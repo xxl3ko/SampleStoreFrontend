@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2e064ba8-73b0-444b-bec8-8009825473ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/samplesApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/samplesApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Samples/Samples.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/Actions/samplesActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/Actions/samplesActions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +21,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2LKHqygVyDUVJ1RablS8zLxZasH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -119,7 +118,23 @@
       <workItem from="1680685913423" duration="31000" />
       <workItem from="1680761245409" duration="5331000" />
       <workItem from="1680792909153" duration="5049000" />
-      <workItem from="1680949834680" duration="8306000" />
+      <workItem from="1680949834680" duration="8342000" />
+      <workItem from="1682068900670" duration="74000" />
+      <workItem from="1683464721868" duration="25000" />
+      <workItem from="1683648512593" duration="659000" />
+      <workItem from="1685528223004" duration="154000" />
+      <workItem from="1685528398345" duration="153000" />
+      <workItem from="1686727894325" duration="288000" />
+      <workItem from="1687609951940" duration="50000" />
+      <workItem from="1687610017035" duration="601000" />
+      <workItem from="1688712909000" duration="150000" />
+      <workItem from="1693561605998" duration="5265000" />
+      <workItem from="1694418642800" duration="77000" />
+      <workItem from="1694418732230" duration="107000" />
+      <workItem from="1694418871333" duration="117000" />
+      <workItem from="1695727089267" duration="199000" />
+      <workItem from="1695727314121" duration="765000" />
+      <workItem from="1696741739340" duration="1194000" />
     </task>
     <servers />
   </component>
@@ -131,7 +146,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
